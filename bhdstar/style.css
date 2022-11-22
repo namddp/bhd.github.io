@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
+}
+
+.container{
+    /* width: 100vw;
+    height: 100vh; */
+    background-color: rgb(36, 36, 35);
+    position: relative;
+    background-image: url(https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/movie-details-bg.jpg);
+}
+
+.head{
+    color: white;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.head a{
+    text-decoration: none;
+    color: white;
+}
+
+.now-showing-list{
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.movie-schedule{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.now-showing-item{
+    height: 400px;
+    width: 200px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.now-showing-item a{
+    text-decoration: none;
+    color: white;
+}
+.now-showing-item img:hover{
+scale: 1.1;
+}
+.item-thumb{
+    height: 300px;
+    width: auto;
+}
+
+.item-title{
+    height: 70px;
+    padding: 15px 0px;
+    font-size: large;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.item-ticket{
+    width: 200px;
+    padding: 15px;
+    background-color: green;
+    border-radius: 5px;
+    text-align: center;
+}
+.item-ticket:hover{
+    width: 200px;
+    padding: 15px;
+    background-color: white;
+    color: green;
+    border-radius: 5px;
+    text-align: center;
+}
+.item-film{
+    display: block;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+.right{
+    position: absolute;
+    top: 200px;
+    right: 0px;
+}
+.right:hover{
+    position: absolute;
+    top: 200px;
+    right: 0px;
+    background-color: rgb(212, 124, 124);
+}
+.left {
+    position: absolute;
+   left: 0px; 
+   top: 200px;
+}
+.right:hover{
+    position: absolute;
+    top: 200px;
+    right: 0px;
+    background-color: rgb(212, 124, 124);
+}
+
+.foot{
+    width: 100vw;
+    height: 30vh;
+}
+.book-ticket{
+    width: 1140px;
+}
+.process{
+    height: 45px;
+    text-align: center;
+}
+.process span{
+    text-align: center;
+    display: inline-block;
+    color: white;
+}
+.step1{
+    width: 188px;
+    line-height: 37px;
+    background-image: url(https://booking.bhdstar.vn/Ticketing/images/bhd_img/selected_f.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.step2{
+    margin-left: -20px;
+    width: 188px;
+    line-height: 37px;
+    background-image: url(https://booking.bhdstar.vn/Ticketing/images/bhd_img/unselect.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat; 
+}
+#book-ticket{
+    margin-left: 50px;
+}
+
+.ticketing{
+    margin-top: 20px;
+    display: flex;
+}
+.ticket-info{
+    width: fit-content;
+    color: white;
+    background-color: black;
+    border: 1px solid green;
+}
+.ticket-info th{
+    padding: 0px 70px;
+}
+.ticket-info tr,td{
+    padding: 10px;
+    text-align: center;
+}
+
+#picSit{
+    visibility: hidden;
+    margin-left: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    border: 2px solid green;
+}
+
+#picSit:hover{
+    margin-left: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    color: green;
+    border: 2px solid green;
+}
+
+
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }

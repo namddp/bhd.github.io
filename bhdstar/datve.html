@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="datve.js"></script>
+<div id="book-ticket">
+        <div class="process">
+            <span class="step1">1. chọn vé</span>
+            <span class="step2">2. chọn ghế</span>
+            <span class="step2">3. chọn đồ ăn</span>
+            <span class="step2">4. xác nhận</span>
+            <span class="step2">5. đặt vé thành công</span>
+        </div>
+        <div id="chonve" class="chonve">
+        </div>
+        <div class="note">
+            <h3>LƯU Ý</h3>
+            <p>- Hãy chọn kỹ loại vé và số lượng bạn muốn mua</p>
+            <p>- Bạn có thể mua tối đa 10 vé trong một lần giao dịch</p>
+            <p>- Để có trải nghiệm mua vé tốt nhất xin vui lòng sử dụng App BHDStar</p>
+        </div>
+        <div class="ticketing">
+            <h4>Standard</h4>  
+            <div class="ticket-info">
+                <table>
+                    <tr>
+                      <th>Vé</th>
+                      <th>Giá</th>
+                      <th>Số Lượng</th>
+                      <th>Tổng</th>
+                    </tr>
+                    <tr>
+                        <span>
+                        <td>Adult-Standard-2D</td>
+                      <td>95,000</td>
+                      <td>
+                        <button onclick="ticPlus(-1,this.nextElementSibling,this.parentElement.parentElement)">trừ</button>
+                        <span>0</span>
+                        <button onclick="ticPlus(1,this.previousElementSibling,this.parentElement.parentElement)">cộng</button>
+                      </td>
+                      <td>0</td></span>
+                    </tr>
+                    <tr><span>
+                      <td>Adult-Vip-2D</td>
+                      <td>95,000</td>
+                      <td>
+                        <button onclick="ticPlus(-1,this.nextElementSibling,this.parentElement.parentElement)">trừ</button>
+                        <span>0</span>
+                        <button onclick="ticPlus(1,this.previousElementSibling,this.parentElement.parentElement)">cộng</button>
+                        </td>
+                      <td>0</td></span>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <button id="picSit">Chọn Ghế</button>
+</div>
+</body>
+</html>
