@@ -27,7 +27,7 @@ function getPerFilm(obj,index){
     
     let ele = "";
         ele = `<div class="now-showing-item item-film fade">
-        <a href="/datve.html?${index}">
+        <a href="bhd.github.io/datve.html?${index}">
             <img class="item-thumb" src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2${obj.poster_path}" alt="">
         </a>
         <a href="">
