@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="form.js"></script>
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="form-login">
+            
+            
+            <form onsubmit="login()">
+                <h1>ĐĂNG NHẬP</h1>
+            <div class="login">
+                <div class="form-text">
+                    <p style="margin-top: 40px ;">Email(*)</p><br>
+                    <input type="text" placeholder="Email" id="username1"><br>
+                </div>
+                <div class="form-text">
+                    <p>Mật Khẩu(*)</p><br>
+                    <input type="password" placeholder="Password" id="password1"><br>
+                </div>
+                
+                
+                <div>
+                <button  class="" type="button" onclick="login()" >Đăng nhập</button><br>
+                <a href="Forgot your password">Quên mật khẩu</a>
+                </div>
+            </div>
+            </form>
+            <div class="wrapper-heading">
+                <h1 style="margin-top: 40px;">ĐĂNG KÝ MỚI</h1>
+            </div>
+                
+            <form onsubmit="singup()">
+                <div class="register">
+             
+                    <p>Họ,Tên(*)</p><br>
+                    <input id="username" type="text" placeholder=""><br>
+                    
+                    <p>Email(*)</p><br>
+                    <input id="email" type="text" placeholder="" id="email"><br>
+                    <div class="error"></div>
+                    <p>Mật Khẩu</p><br>
+                    <input id="password" type="password" placeholder="" id="password"><br>
+                    <div class="error"></div>
+                    
+                    <div>
+                        <button class="" type="button" onclick="singup()" >Đăng ký</button><br>
+                        
+                    </div>    
+                </div>   
+            </form>    
+            
+        
+            
+    </div>
+    <script>
+        function login(e){
+            event.preventDefault();
+            let username = document.getElementById("username").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let user=localStorage.getItem(username);
+            let data= JSON.parse(user);
+            if(user==null){
+                alert("Vui lòng nhập Email và password")
+            }
+            else if( username==data.username && email==data.email && password==data.password ){
+                alert("Đăng nhập thành công")
+                window.location.href="thanh.html"
+            }
+            
+
+        }
+        function singup(e){
+            event.preventDefault();
+            let username = document.getElementById("username").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let user ={
+                username : username,
+                email : email,
+                password : password,
+            }
+            let json = JSON.stringify(user);
+            localStorage.setItem(username,json);
+            alert('Đăng ký thành công');
+            window.location.href="thanh.html"
+        }
+        
+        
+    </script>
+    
+</body>
+</html>
