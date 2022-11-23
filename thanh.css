@@ -1,0 +1,345 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.body {
+    margin-top: 100px;
+    color: white;
+    background-attachment: fixed;
+    background-image: url(	https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/movie-details-bg.jpg);
+}
+
+
+#header {
+    display: flex;
+    background-color: rgb(20, 18, 18);
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    height: 70px;
+    justify-content: center;
+    padding: 5px;
+    
+
+}
+
+
+.header-logo {
+    position: absolute;
+    z-index: 1;
+    top: 13px;
+    width: 80px;
+    height: 80px;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    padding: 1px 6px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    /* flex-wrap: wrap; */
+}
+
+#checkbox-toggle {
+    display: none;
+    
+}
+#checkbox-toggle:checked ~ .header-menu-sub {
+    display: block;
+    
+}
+.header-menu-sub {
+    display: none;
+    position: absolute;
+    margin-top: 60px;
+    background-color: #141414;
+    z-index: 1;
+    border-radius: 5px;
+    
+    
+}
+.header-menu-sub li {
+    width: 300px;
+    width: max-content;
+    padding-left: 20px;
+    margin: 10px;
+    color: #bfbfbf;
+    font-size: 20px;
+}
+
+.header-menu-sub li:hover {
+    color: green;
+}
+.header-btn {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    user-select: none;
+    
+}
+.header-btn span {
+    display: flex;
+    width: fit-content;
+    color: white;
+    margin-bottom: 3px; 
+}
+
+.header-book {
+    position: absolute;
+    left: 100px;
+    width: 100px;
+    background-color: #42af33;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    text-align: center;
+    font-weight: 700;
+    padding: 5px;
+}
+
+.header-left {
+    position: absolute;
+    right: 50px;
+
+}
+
+.header-left ul li {
+    display: inline;
+    list-style-type: none;
+    padding: 10px;
+    
+    
+}
+
+.header-left ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.header-left ul li i {
+    border: 1px solid white;
+    padding: 10px;
+    font-size:x-large;
+    border-radius: 10px;
+}
+.header-line {
+    position: absolute;
+    top: 70px;
+    bottom: -31px;
+    width: 100%;
+    text-align: center;
+}
+
+.header-login {
+    border-radius: 5px;
+    background-color: #42af33;
+    font-size: large;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    color: white;
+    height: 40px;
+    font-weight: 600;
+    
+}
+#checkbox-toggle-login {
+    display: none;
+}
+#checkbox-toggle-login:checked ~ .header-form-login {
+    display: flex;
+}
+
+.header-form-login {
+    display: none;
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+    background-color: #121825;
+    right: 0px;
+    width: 315px;
+    padding: 5px;
+    flex-direction: column;
+}
+
+.header-form-login div {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    
+}
+.header-form-login input {
+    background-color: #273245;
+    color: white;
+    transition: all 2s ease;
+    padding: 5px 15px;
+}
+.header-form-login * {
+    border-radius: 4px;
+    margin: 5px;
+    height: 36px;
+}
+
+.header-form-login div button {
+    padding: 8px 15px;
+    background-color: #42af33;
+    font-size: 15px;
+    margin-left: 0px;
+    font-weight: 500;
+
+}
+.header-form-login div *:hover, .header-register:hover {
+    color: blueviolet;
+}
+.header-form-login div a {
+    padding: 8px 0px;
+    font-size: 15px;
+    margin-right: 0px;
+    color: #2d4772 !important;
+    background-color: inherit;
+}
+.header-register {
+    background-color: #42af33;
+    text-align: center;
+    margin-top: 15px;
+    padding: 6px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.details {
+    margin-left: 30px;
+}
+.details * {
+    padding-bottom: 18px;
+}
+.details p {
+    color: #a6b2c9;
+}
+.detail-film {
+    display: flex;
+    
+}
+.detail-film-poster {
+    height: 536px;
+    width: 760px;
+    background-color: rgb(204, 204, 232);
+    background-size: cover;
+
+}
+.detail-table th {
+   text-align: left;
+    width: 120px;
+}
+.detail-film-trailer-book {
+    padding-top: 18px;
+}
+.detail-film-trailer-book a {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    background-color: #42af33;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px !important;
+    font-weight: 700;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.cenlendars {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-bottom: 2px solid #212b35;
+    padding: 0px 50px;
+}
+
+.cenlendars li {
+    color: #a6b2c9;
+    width: 250px;
+
+}
+.cenlendars li:hover {
+    background-color: #42af33;
+    color: white;
+    font-weight: 500;
+}
+.cenlendars li a span {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+
+}
+
+.detail-cenlendars {
+    padding: 12px 50px 0px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.th-cinema * {
+    width: 181px;
+}
+.th-cinema {
+    padding: 19px 17px;
+}
+.th-cinema p {
+    font-size: 12px;
+}
+
+.th-map {
+    height: 30px;
+    width: 215px;
+    text-align: center;
+    background-color: #42af33;
+}
+
+.film-type-time {
+    display: flex;
+    margin-left: 30px;
+}
+.detail-time {
+    margin-left: 30px;
+}
+.detail-time li {
+    background-color: #10171e;
+    color: #97a5be;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+.detail-time li:hover {
+    background-color: #42af33;
+    color: white;
+}
+#footer {
+    height: 374px;
+    background-image: url(https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/bg-grid.jpg);
+}
+.footer-1 {
+    height: 298px;
+}
+
+.footer-col-1 {
+    width: 262px;
+}
+.footer-col-2 {
+    width: 262px;
+}
+.footer-col-1 ul li {
+    margin-bottom: 10px;
+}
+.footer-col-2 ul li {
+    margin-bottom: 10px;
+}
+.footer-col-1 ul li a {
+    color: orange;
+}
+.footer-col-2 ul li a {
+    color: orange;
+}
