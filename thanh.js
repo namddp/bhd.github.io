@@ -4,14 +4,6 @@ let hTr = [
       Id: 'bhd-star-long-khanh',
       Background:'https://www.bhdstar.vn/wp-content/uploads/2021/12/long-khanh',
       Like:'165.204 Thích'
-      phim: {
-        phim1: {
-            lichchieu : {
-                13
-            }
-        }
-        
-      }
     },
     {
       Name : 'BHD STAR THE GARDEN',
