@@ -76,7 +76,6 @@
 .header-btn {
     box-sizing: border-box;
     display: inline-block;
-    width: 100%;
     cursor: pointer;
     user-select: none;
     
@@ -260,6 +259,12 @@
     padding: 0px 50px;
 }
 
+/* #checkbox-toggle-cenlendars {
+    display: none;
+    
+} */
+
+
 .cenlendars li {
     color: #a6b2c9;
     width: 250px;
@@ -270,7 +275,10 @@
     color: white;
     font-weight: 500;
 }
-.cenlendars li a span {
+.cenlendars li button {
+    width: 100%;
+}
+.cenlendars li button span {
     display: inline-block;
     text-align: center;
     width: 100%;
