@@ -21,8 +21,9 @@ function datve(index){
 }
 
 let indexPage = window.location.search;
-let PageId = Number(indexPage.charAt(1));
-datve(PageId);
+let PageId = new URLSearchParams(indexPage);
+let trang = PageId.get("id");
+datve(trang);
 
 
 function ticPlus(a,ele,el){
