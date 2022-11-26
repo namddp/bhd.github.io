@@ -554,7 +554,7 @@ function infoFilm(i){
                 <span>
                 <button onclick="playTrailer()" class="checkbox-trailer">XEM TRAILER</button>
                 <button onclick="pauseTrailer()" class="checkbox-close-trailer">CLOSE [X]</button>
-                <iframe class="trailer-film  top-[-180px] invisible absolute" width="760" height="515" src="${scheduleMovie[i].trailer}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
+                <iframe class="trailer-film  top-[-180px] invisible absolute" width="760" height="515" src=""  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
                 <span><a href="./datve.html?id=${i}">MUA VÉ NGAY</a></span>
             </div>
         </div>
@@ -568,9 +568,12 @@ function infoFilm(i){
 function playTrailer(){
   let closeTrailer = document.querySelector(".checkbox-close-trailer");
   let trailer = document.querySelector(".trailer-film");
+  // let ytb = document.querySelector(".ytb-button");
+  console.dir(trailer);
+
     trailer.style.visibility = "visible";
     closeTrailer.style.visibility = "visible";
-    
+    trailer.src = `${scheduleMovie[i].trailer}`;
 }
 
 
