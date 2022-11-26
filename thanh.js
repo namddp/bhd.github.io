@@ -179,6 +179,7 @@ let data =  fetch(`https://api.themoviedb.org/3/list/1?api_key=${api_key}&langua
 let scheduleMovie = [
   {
     id: "1",
+    trailer: "https://www.youtube.com/embed/OB3g37GTALc",
     day: [
       (ngay27 = [
         {
@@ -266,6 +267,7 @@ let scheduleMovie = [
   },
   {
     id: "2",
+    trailer: "https://www.youtube.com/embed/DobBbl0_6Lc",
     day: [
       (ngay27 = [
         {
@@ -328,6 +330,7 @@ let scheduleMovie = [
   },
   {
     id: "3",
+    trailer: "https://www.youtube.com/embed/8YjFbMbfXaQ",
     day: [
       (ngay27 = [
         {
@@ -390,6 +393,7 @@ let scheduleMovie = [
   },
   {
     id: "4",
+    trailer: "https://www.youtube.com/embed/ybji16u608U",
     day: [
       (ngay27 = [
         {
@@ -546,8 +550,11 @@ function infoFilm(i){
                     <td>Phụ đề tiếng Việt</td>
                 </tr>                    
             </table>
-            <div class="detail-film-trailer-book">
-                <span><a href="">XEM TRAILER</a></span>
+            <div class="detail-film-trailer-book relative">
+                <span>
+                <button onclick="playTrailer()" class="checkbox-trailer">XEM TRAILER</button>
+                <button onclick="pauseTrailer()" class="checkbox-close-trailer">CLOSE [X]</button>
+                <iframe class="trailer-film  top-[-180px] invisible absolute" width="760" height="515" src="${scheduleMovie[i].trailer}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
                 <span><a href="./datve.html?id=${i}">MUA VÉ NGAY</a></span>
             </div>
         </div>
@@ -556,4 +563,20 @@ function infoFilm(i){
 .catch();
   
 
+}
+
+function playTrailer(){
+  let closeTrailer = document.querySelector(".checkbox-close-trailer");
+  let trailer = document.querySelector(".trailer-film");
+    trailer.style.visibility = "visible";
+    closeTrailer.style.visibility = "visible";
+}
+
+
+function pauseTrailer() {
+  let closeTrailer = document.querySelector(".checkbox-close-trailer");
+  let trailer = document.querySelector(".trailer-film");
+    closeTrailer.style.visibility = "hidden";
+    trailer.style.visibility = "hidden";
+    trailer.src = "";
 }
