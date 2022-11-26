@@ -172,6 +172,10 @@
 // // btn2.addEventListener("click", choice);
 
 /////// js cua nam viet
+const api_key = "0a6d26d952bdd58d29ef7b7cb82a59db";
+let data =  fetch(`https://api.themoviedb.org/3/list/1?api_key=${api_key}&language=en-US`);
+
+
 let scheduleMovie = [
   {
     id: "1",
@@ -455,12 +459,15 @@ function inFilm(a) {
   let PageId = new URLSearchParams(indexPage);
   let trang = PageId.get("id");
   let b = Number(a);
+  infoFilm(trang);
   Layinfo(trang, b);
 }
+inFilm(0);
 
 function Layinfo(phim, thu) {
   let count = scheduleMovie[phim].day[thu];
   let eleP = document.querySelector(".total-cenlendars");
+  eleP.innerHTML = "";
   for (i = 0; i < count.length; i++) {
     eleP.innerHTML += `<div class="detail-cenlendars">
                 <div class="infor-cinema-map">
@@ -479,7 +486,7 @@ function Layinfo(phim, thu) {
                   <ul class="giochieu detail-time grid grid-cols-5 gap-3">`;
     for (let j = 0; j < count[i].xuatchieu.length; j++) {
         let eleG = document.getElementsByClassName("giochieu");
-      eleG[i].innerHTML += `<li>${count[i].xuatchieu[j]}</li>`;
+      eleG[i].innerHTML += `<li><a href="./datve.html?id=${phim}">${count[i].xuatchieu[j]}</a></li>`;
     }
     eleP.innerHTML += `</ul>
                       </div>
@@ -487,4 +494,66 @@ function Layinfo(phim, thu) {
                     </div>`;
 console.log("eleP:" ,eleP);
   }
+}
+
+
+// function lấy thông tin film
+
+function infoFilm(i){
+  
+  data.then(function(res){
+    return res.json();
+  })
+  .then(function(data){
+    return data.items;
+  }).then(function(items){
+    console.log(items);
+    let eleF = document.getElementById("total-infor-film");
+    eleF.innerHTML = `
+    <span> | ${items[i].title}</span>
+    <div class="detail-film">
+        <img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2${items[i].poster_path}" alt="#" class="detail-film-poster"/>
+        <div class="details">
+            <h1 class="text-2xl font-normal">${items[i].title}</h1>
+            <p>${items[i].overview}</p>
+            <table class="detail-table">
+                <tr>
+                    <th>Phân loại</th>
+                    <td class="text-red-500 font-bold">C13 - PHIM DÀNH CHO KHÁN GIẢ TỪ 13 TUỔI TRỞ LÊN</td>
+                </tr>      
+                <tr>
+                    <th>Đạo diễn</th>
+                    <td>Bruno Podalydès</td>
+                </tr>
+                <tr>
+                    <th>Diễn viên</th>
+                    <td>Denis Podalydès, Sandrine Kiberlain</td>
+                </tr>  
+                <tr>
+                    <th>Thể loại</th>
+                    <td>Family</td>
+                </tr>  
+                <tr>
+                    <th>Khởi chiếu</th>
+                    <td>${items[i].release_date}</td>
+                </tr>  
+                <tr>
+                    <th>Thời lượng</th>
+                    <td>92 phút</td>
+                </tr>  
+                <tr>
+                    <th>Ngôn ngữ</th>
+                    <td>Phụ đề tiếng Việt</td>
+                </tr>                    
+            </table>
+            <div class="detail-film-trailer-book">
+                <span><a href="">XEM TRAILER</a></span>
+                <span><a href="./datve.html?id=${i}">MUA VÉ NGAY</a></span>
+            </div>
+        </div>
+    </div>`;
+  })
+.catch();
+  
+
 }
