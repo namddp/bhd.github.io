@@ -118,7 +118,7 @@ scale: 1.1;
     height: 30vh;
 }
 .book-ticket{
-    width: 1140px;
+    width: 100vw;
 }
 .process{
     height: 45px;
@@ -146,11 +146,12 @@ scale: 1.1;
 }
 #book-ticket{
     margin-left: 50px;
+    display: flex;
+    flex-direction: row;
 }
 
 .ticketing{
     margin-top: 20px;
-    display: flex;
 }
 .ticket-info{
     width: fit-content;
@@ -158,35 +159,60 @@ scale: 1.1;
     background-color: black;
     border: 1px solid green;
 }
-.ticket-info th{
-    padding: 0px 70px;
-}
-.ticket-info tr,td{
+.ticket-info th,.ticket-info td{
     padding: 10px;
-    text-align: center;
 }
 
 #picSit{
+    text-align: center;
     visibility: hidden;
-    margin-left: 50%;
-    padding: 20px;
+    margin-top: 20px;
+    padding: 10px;
     border-radius: 10px;
     background-color: green;
     color: white;
     border: 2px solid green;
+    position: fixed;
+    left: 50%;
 }
 
 #picSit:hover{
-    margin-left: 50%;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     background-color: white;
     color: green;
     border: 2px solid green;
 }
+.bag-info{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.bag-info h1{
+    padding-bottom: 20px;
+}
+.bag-film, .bag-ticket{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
-
-
+.sitting{
+    width: 300px;
+    height: fit-content;
+    visibility: hidden;
+    margin: auto;
+    margin-top: -100px;
+    padding: 10px 0px;
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+}
+.sitting label{
+    display: block;
+    margin: 5px;
+}
 @keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
