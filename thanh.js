@@ -570,6 +570,7 @@ function playTrailer(){
   let trailer = document.querySelector(".trailer-film");
     trailer.style.visibility = "visible";
     closeTrailer.style.visibility = "visible";
+    
 }
 
 
