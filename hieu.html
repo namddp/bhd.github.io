@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="hieu.css" />
+    <link
+      rel="stylesheet"
+      href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-banner owl-carousel owl-theme">
+      <div class="slider-banner img1">
+        <a href="#">
+          <img src="img-1.jpeg" alt="" />
+        </a>
+      </div>
+      <div class="slider-banner img2">
+        <a href="#">
+          <img src="img-2.jpg" alt="" />
+        </a>
+      </div>
+      <div class="slider-banner img3">
+        <a href="#">
+          <img src="im-3.jpg" alt="" />
+        </a>
+      </div>
+      <div class="slider-banner img4">
+        <a href="#">
+          <img src="img-4.jpg" alt="" />
+        </a>
+      </div>
+      <div class="slider-banner img5">
+        <a href="#">
+          <img src="img-5.jpg" alt="" />
+        </a>
+      </div>
+      <div class="slider-banner img6">
+        <a href="#">
+          <img src="img-6.jpg" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <div class="container-even">
+      <div class="even">
+        <ul class="flex justify-center items-center">
+          <button>
+            <li
+              class="promo-btn text-green-600 text-3xl px-1.5 hover:font-semibold relative after:absolute after:bottom-0 after:left-0 after:bg-green-600 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-300 cursor-pointer"
+            >
+              KHUYẾN MÃI
+            </li>
+          </button>
+
+          <li class="text-3xl px-1.5 text-green-600">|</li>
+          <li
+            class="even-btn text-green-600 text-3xl px-1.5 hover:font-semibold relative after:absolute after:bottom-0 after:left-0 after:bg-green-600 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-300 cursor-pointer"
+          >
+            SỰ KIỆN
+          </li>
+        </ul>
+      </div>
+      <!-- ------- -->
+      <div class="container-img flex justify-center items-center">
+        <div class="slide-img flex flex-nowrap justify-evenly">
+          <div class="image imgall">
+            <a href="">
+              <img src="img/im2.jpg" alt="anh 2" />
+            </a>
+          </div>
+          <div class="image imgall">
+            <a href=""><img src="img/img3.png" alt="anh 3" /></a>
+          </div>
+          <div class="image imgall">
+            <a href=""><img src="img/img4.jpg" alt="anh 4" /></a>
+          </div>
+          <div class="image imgall">
+            <a href=""><img src="img/img5.png" alt="anh 5" /></a>
+          </div>
+        </div>
+      </div>
+      <!-- --------- -->
+      <div class="container-img-even flex justify-center items-center hidden">
+        <div class="slide-img-promo flex flex-nowrap justify-evenly">
+          <div class="image-promo imgall">
+            <a href="">
+              <img src="img-promotion/imgpro-1.jpg" alt="anh 1" />
+            </a>
+          </div>
+          <div class="image-promo imgall">
+            <a href=""><img src="img-promotion/imdpro-2.jpg" alt="anh 2" /></a>
+          </div>
+          <div class="image-promo imgall">
+            <a href=""><img src="img-promotion/imgpro-3.jpg" alt="anh 3" /></a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="btn flex justify-center items-center">
+          <button class="dot mr-1" onclick="doi(-1)"></button>
+          <button class="dot" onclick="doi(+1)"></button>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="hieu.js"></script>
+  </body>
+</html>
