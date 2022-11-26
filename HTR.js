@@ -58,7 +58,7 @@ function renderhTr(arr){
     ele.innerHTML += `
         <div id="long khanh" class="bg-black text-white flex flex-col justify-center m-2 pb-4 hover:scale-110 ease-in duration-200 hover:text-amber-400">
             <div class=" ">
-              <a href="http://127.0.0.1:5500/ProjectZ/HTR2.html?id=${i}">
+              <a href="./HTR2.html?id=${i}">
                   <img class="" 
                     width=243 height=330 
                     src="${arr[i].Background}-243x330.jpg" 

@@ -92,7 +92,7 @@
 /* -------------- */
 .container-img {
   height: 300px;
-  width: 100vw;
+  width: 100%;
 }
 .dot {
   width: 14px;

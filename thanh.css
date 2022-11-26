@@ -19,7 +19,7 @@
     height: 70px;
     justify-content: center;
     padding: 5px;
-    
+    z-index: 2;
 
 }
 

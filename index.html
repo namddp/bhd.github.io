@@ -5,10 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width='device-width', initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./hieu.css" />
+    <link
+      rel="stylesheet"
+      href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="thanh.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="main.js"></script>
+   
+    <!-- header -->
+    <div id="header" class="top-0">
+        <a class="header-logo" href="#"><img src="https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/logo.png" alt="#"></a>
+        <div class="header-menu">
+            <input type="checkbox" id="checkbox-toggle">
+            <label for="checkbox-toggle" class="header-btn">
+                <span><img src="https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/bg-button-menu.jpg" alt=""></span>
+                <span><img src="https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/bg-button-menu.jpg" alt=""></span>
+                <span><img src="https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/bg-button-menu.jpg" alt=""></span>
+                <span>MENU</span>
+            </label>
+            <ul class="header-menu-sub">
+                <li><a href="#">LỊCH CHIẾU</a></li>
+                <li><a href="./HTR.html">HỆ THỐNG RẠP</a></li>
+                <li><a href="#">KHUYẾN MÃI | SỰ KIỆN</a></li>
+            </ul>
+        </div>
+        <a class="header-book" href="">MUA VÉ</a>
+        <div class="header-left">
+            <ul>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li>
+                    <input type="checkbox" id="checkbox-toggle-login">
+                    <label for="checkbox-toggle-login" class="header-login">ĐĂNG NHẬP</label>
+                    <form action="" class="header-form-login">
+                        <input type="text" placeholder="Email"/>
+                        <input type="password" placeholder="Password"/>
+                        <div>
+                            <button>ĐĂNG NHẬP</button>
+                            <a href="#">Quên mật khẩu</a>
+                        </div>
+                        <a href="#" class="header-register">ĐĂNG KÝ THÀNH VIÊN</a>
+                    </form>
+                </li>
+            </ul>   
+        </div> 
+        <img class="header-line" src="https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/line-header1.png" alt="#">        
+    </div>
+    <!-- header -->
+    <div class="container-banner owl-carousel owl-theme">
+        <div class="slider-banner img1">
+          <a href="#">
+            <img src="./IMG-BANNER/img-1.jpeg" alt="" />
+          </a>
+        </div>
+        <div class="slider-banner img2">
+          <a href="#">
+            <img src="./IMG-BANNER/img-2.jpg" alt="" />
+          </a>
+        </div>
+        <div class="slider-banner img3">
+          <a href="#">
+            <img src="./IMG-BANNER/im-3.jpg" alt="" />
+          </a>
+        </div>
+        <div class="slider-banner img4">
+          <a href="#">
+            <img src="./IMG-BANNER/img-4.jpg" alt="" />
+          </a>
+        </div>
+        <div class="slider-banner img5">
+          <a href="#">
+            <img src="./IMG-BANNER/img-5.jpg" alt="" />
+          </a>
+        </div>
+        <div class="slider-banner img6">
+          <a href="#">
+            <img src="./IMG-BANNER/img-6.jpg" alt="" />
+          </a>
+        </div>
+      </div>
+    <!--  -->
     <div class="container">
         <div class="head">
             <a href="#movie" class="now-showing-list">PHIM ĐANG CHIẾU</a>
@@ -20,13 +106,106 @@
             <button class="left" onclick="plusDivs(-1)">&#10094;</button>
             <button class="right" onclick="plusDivs(+1)">&#10095;</button>
     </div>
-
-    <div class="foot">
-
     </div>
+    <!--  -->
+    <div class="container-even">
+        <div class="even">
+          <ul class="flex justify-center items-center">
+            <button>
+              <li
+                class="promo-btn text-green-600 text-3xl px-1.5 hover:font-semibold relative after:absolute after:bottom-0 after:left-0 after:bg-green-600 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-300 cursor-pointer"
+              >
+                KHUYẾN MÃI
+              </li>
+            </button>
+  
+            <li class="text-3xl px-1.5 text-green-600">|</li>
+            <li
+              class="even-btn text-green-600 text-3xl px-1.5 hover:font-semibold relative after:absolute after:bottom-0 after:left-0 after:bg-green-600 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-300 cursor-pointer"
+            >
+              SỰ KIỆN
+            </li>
+          </ul>
+        </div>
+        <!-- ------- -->
+        <div class="container-img flex justify-center items-center">
+          <div class="slide-img flex flex-nowrap justify-evenly">
+            <div class="image imgall">
+              <a href="">
+                <img src="img/im2.jpg" alt="anh 2" />
+              </a>
+            </div>
+            <div class="image imgall">
+              <a href=""><img src="img/img3.png" alt="anh 3" /></a>
+            </div>
+            <div class="image imgall">
+              <a href=""><img src="img/img4.jpg" alt="anh 4" /></a>
+            </div>
+            <div class="image imgall">
+              <a href=""><img src="img/img5.png" alt="anh 5" /></a>
+            </div>
+          </div>
+        </div>
+        <!-- --------- -->
+        <div class="container-img-even flex justify-center items-center hidden">
+          <div class="slide-img-promo flex flex-nowrap justify-evenly">
+            <div class="image-promo imgall">
+              <a href="">
+                <img src="img-promotion/imgpro-1.jpg" alt="anh 1" />
+              </a>
+            </div>
+            <div class="image-promo imgall">
+              <a href=""><img src="img-promotion/imdpro-2.jpg" alt="anh 2" /></a>
+            </div>
+            <div class="image-promo imgall">
+              <a href=""><img src="img-promotion/imgpro-3.jpg" alt="anh 3" /></a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="btn flex justify-center items-center">
+            <button class="dot mr-1" onclick="doi(-1)"></button>
+            <button class="dot" onclick="doi(+1)"></button>
+          </div>
+        </div>
+      </div>
+  
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+      <script src="hieu.js"></script>
+ <!-- bat dau footer -->
+ <div id="footer" class="px-44 bg-black">
+    <div class="footer-1 flex">
+        <div class="footer-col-1 px-4">
+            <h3 class="mt-5 mb-2.5 pb-2 text-white">VE BHD STAR</h3>
+            <ul>
+                <li class=""><a href="">He Thong Rap</a></li>
+                <li class=""><a href="">Tuyen dung</a></li>
+                <li class=""><a href="">Lien He</a></li>
+            </ul>
+            <img class="h-14 w-36" src="	https://www.bhdstar.vn/wp-content/uploads/2020/02/dathongbao-1.png" alt="">
+        </div>
+        <div class="footer-col-2 px-4">
+            <h3 class="mt-5 mb-2.5 pb-2 text-white">QUY DINH & DIEU KHOAN</h3>
+             <ul>
+                <li class=""><a href="">Quy dinh thanh vien</a></li>
+                <li class=""><a href="">Dieu khoan</a></li>
+                <li class=""><a href="">Huong dan dat ve truc tiep</a></li>
+                <li class=""><a href="">Quy dinh va chinh sach chung</a></li>
+                <li class=""><a href="">Chinh sach bao ve thong tin ca nhan cua nguoi tieu dung</a></li>
+            </ul>
+        </div>
     </div>
-
-<a href=""></a>
-
+    <div class="footer-2 border-solid border-t-2 border-gray-500 flex justify-center">
+        <h5 class="text-white py-6">© 2015 BHD Star Cineplex</h5>
+    </div>
+</div>
+<!-- ket thuc footer -->
+<script src="main.js"></script>
 </body>
 </html>

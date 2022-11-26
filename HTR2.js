@@ -104,7 +104,7 @@ function renterHTR2(index){
   for(i = 0; i<hTr.length; i++){
     b.innerHTML += `
       <li>
-      <a class="item--cinema" href="http://127.0.0.1:5500/ProjectZ/HTR2.html?id=${i}">
+      <a class="item--cinema" href="./HTR2.html?id=${i}">
       <i class="fa fa-map-marker" aria-hidden="true"></i>
       <span>${hTr[i].Name}</span>
       </a>

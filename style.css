@@ -12,6 +12,7 @@
     background-color: rgb(36, 36, 35);
     position: relative;
     background-image: url(https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/movie-details-bg.jpg);
+    padding-bottom: 50px;
 }
 
 .head{
@@ -123,6 +124,7 @@ scale: 1.1;
 .process{
     height: 45px;
     text-align: center;
+    padding-top: 100px;
 }
 .process span{
     text-align: center;
@@ -148,6 +150,7 @@ scale: 1.1;
     margin-left: 50px;
     display: flex;
     flex-direction: row;
+    padding-top: 100px;
 }
 
 .ticketing{
