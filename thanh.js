@@ -568,9 +568,7 @@ function infoFilm(i){
 function playTrailer(){
   let closeTrailer = document.querySelector(".checkbox-close-trailer");
   let trailer = document.querySelector(".trailer-film");
-  // let ytb = document.querySelector(".ytb-button");
-  console.dir(trailer);
-
+    console.dir(trailer);
     trailer.style.visibility = "visible";
     closeTrailer.style.visibility = "visible";
     trailer.src = `${scheduleMovie[i].trailer}`;
