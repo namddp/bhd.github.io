@@ -27,13 +27,13 @@ function getPerFilm(obj,index){
     
     let ele = "";
         ele = `<div class="now-showing-item item-film fade">
-        <a href="thanh.html?id=${index}">
+        <a href="./thanh.html?id=${index}">
             <img class="item-thumb" src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2${obj.poster_path}" alt="">
         </a>
         <a href="">
             <h4 class="item-title">${obj.original_title}</h4>
         </a>
-        <a href="">
+        <a href="./thanh.html?id=${index}">
             <h5 class="item-ticket">Mua Vé</h5>
         </a>
         `
