@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./hieu.css" />
+    <link
+      rel="stylesheet"
+      href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+    <script src="form.js"></script>
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./thanh.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+      @media (min-width: 1536px){
+.container{
+    max-width: 100% !important;
+}}
+
+    </style>
+    <!-- cập nhật icon -->
+    <script src="https://kit.fontawesome.com/65d5d1cc3c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+    <!-- header -->
+    <div id="header" class="top-0">
+        <a class="header-logo" href="./index.html"><img src="https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/logo.png" alt="#"></a>
+        <div class="header-menu">
+            <input type="checkbox" id="checkbox-toggle">
+            <label for="checkbox-toggle" class="header-btn">
+                <span><img src="https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/bg-button-menu.jpg" alt=""></span>
+                <span><img src="https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/bg-button-menu.jpg" alt=""></span>
+                <span><img src="https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/bg-button-menu.jpg" alt=""></span>
+                <span>MENU</span>
+            </label>
+            <ul class="header-menu-sub">
+                <li><a href="#">LỊCH CHIẾU</a></li>
+                <li><a href="./HTR.html">HỆ THỐNG RẠP</a></li>
+                <li><a href="#">KHUYẾN MÃI | SỰ KIỆN</a></li>
+            </ul>
+        </div>
+        <a class="header-book" href="">MUA VÉ</a>
+        <div class="header-left">
+            <ul>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li>
+                    <input type="checkbox" id="checkbox-toggle-login">
+                    <label for="checkbox-toggle-login" class="header-login">ĐĂNG NHẬP</label>
+                    <form action="" class="header-form-login">
+                        <input type="text" placeholder="Email"/>
+                        <input type="password" placeholder="Password"/>
+                        <div>
+                            <button>ĐĂNG NHẬP</button>
+                            <a href="#">Quên mật khẩu</a>
+                        </div>
+                        <a href="#" class="header-register">ĐĂNG KÝ THÀNH VIÊN</a>
+                    </form>
+                </li>
+            </ul>   
+        </div> 
+        <img class="header-line" src="https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/line-header1.png" alt="#">        
+    </div>
+    <!-- header -->
+    <div class="form-login">
+            
+            
+        <form onsubmit="login()">
+           <div><h1>ĐĂNG NHẬP</h1></div> 
+        <div class="login">
+            <div class="form-text">
+                <p >Email(*)</p><br>
+                <input type="text" placeholder="Email" id="username1"><br>
+            </div>
+            <div class="form-text">
+                <p>Mật Khẩu(*)</p><br>
+                <input type="password" placeholder="Password" id="password1"><br>
+            </div>
+            
+            
+            <div>
+            <button  class="" type="button" onclick="login()" >Đăng nhập</button><br>
+            <a href="Forgot your password">Quên mật khẩu</a>
+            </div>
+        </div>
+        </form>      
+          
+</div>
+ <!-- bat dau footer -->
+ <div id="footer" class="px-44 bg-black">
+    <div class="footer-1 flex">
+        <div class="footer-col-1 px-4">
+            <h3 class="mt-5 mb-2.5 pb-2 text-white">VE BHD STAR</h3>
+            <ul>
+                <li class=""><a href="">He Thong Rap</a></li>
+                <li class=""><a href="">Tuyen dung</a></li>
+                <li class=""><a href="">Lien He</a></li>
+            </ul>
+            <img class="h-14 w-36" src="	https://www.bhdstar.vn/wp-content/uploads/2020/02/dathongbao-1.png" alt="">
+        </div>
+        <div class="footer-col-2 px-4">
+            <h3 class="mt-5 mb-2.5 pb-2 text-white">QUY DINH & DIEU KHOAN</h3>
+             <ul>
+                <li class=""><a href="">Quy dinh thanh vien</a></li>
+                <li class=""><a href="">Dieu khoan</a></li>
+                <li class=""><a href="">Huong dan dat ve truc tiep</a></li>
+                <li class=""><a href="">Quy dinh va chinh sach chung</a></li>
+                <li class=""><a href="">Chinh sach bao ve thong tin ca nhan cua nguoi tieu dung</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-2 border-solid border-t-2 border-gray-500 flex justify-center">
+        <h5 class="text-white py-6">© 2015 BHD Star Cineplex</h5>
+    </div>
+</div>
+<!-- ket thuc footer -->
+<script src="./main.js"></script>
+</body>
+</html>

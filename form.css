@@ -19,6 +19,8 @@ h1{
 }
 .login,
 .register{
+    padding-top: 100px;
+    margin-top: 100px;
         width: 442px;
         box-shadow: 10px 5px 5px #bfb0b0;
         
